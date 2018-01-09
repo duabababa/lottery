@@ -1,0 +1,199 @@
+.centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+html,body{
+  height: 100%;
+}
+.lottery-outer{
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  .lottery-inner{
+    width: 1024px;
+    height: 768px;
+    margin: 0 auto;
+    background: url(../images/bg.jpg) center center;
+    .prize{
+      height: 378px;
+      position: relative;
+      margin-bottom: 6px;
+      .replenish{
+        width: 392px;
+        height: 20px;
+        position: absolute;
+        top: 35px;
+        left: 317px;
+        z-index: 3;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .prize-box{
+        position: absolute;
+        top: 35px;
+        left: 317px;
+        width: 428px;
+        height: 280px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+        .prize-name{
+          position: absolute;
+          top: 245px;
+          margin-left: 50%;
+          transform: translateX(-50%);
+          font-size: 26px;
+          color: red;
+        }
+      }
+      .prize-class-num{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 6px;
+        left: 301px;
+        width: 456px;
+        height: 50px;
+        box-sizing: border-box;
+        padding: 0 80px;
+        // background: yellow;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 50px;
+        letter-spacing: 0.2em;
+        .prize-class{
+          position: relative;
+          width: 150px;
+          margin-right: 20px;
+          .class-btn{
+            color: #fac310;
+          }
+          .classes{
+            position:absolute;
+            width: 100%;
+            top: 50px;
+            left: 0;
+            z-index: 999;
+            background: #ccc;
+            font-weight: 100;
+          }
+        }
+        .prize-num{
+          color: #fff;
+        }
+      }
+    }
+
+    .lottery-list-show{
+      position: relative;//知道奖项之后要删
+      margin: 0 auto;
+      padding: 10px;
+      width: 672px;
+      height: 345px;
+      background: #c54738;
+      .lottery-list{
+        width: 100%;
+        height: 290px;
+        // background: #ad3c2c;
+        // background: green;
+        .roll-list{
+          height: 100%;
+          ul{
+            height: 100%;
+            display: flex; 
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content:space-around;
+            overflow: hidden;
+            li{
+              display: flex;
+              // background: blue;
+              flex-direction: column;
+              justify-content: space-around;
+              align-content: center;
+              align-items: center;
+              overflow: hidden;
+              border-radius: 5px;
+              // max-height: 140px;
+              &.li0{//五等奖 15人
+                width: 11.6%;
+              }
+              &.li1{// 四等奖 10人
+                width: 16.6%;
+              }
+              &.li2{// 三等奖 6人
+                width: 15%;
+              }
+              &.li3{// 二等奖 4人
+                width: 20%;
+              }
+              &.li4{// 一等奖 2人
+                width: 25%;
+              }
+              &.li5{
+                width: 30%;
+              }
+              span{
+                display: block;
+                background: url(../images/bao21.png) no-repeat;
+                background-size: 100% auto;
+                width: 80%;
+                height: 75%;
+                &.span0{
+                }
+              }
+              em{
+                display: block;
+                white-space: nowrap;
+                height: 25%;
+                text-align: center;
+                font-size: 16px;
+                // line-height: 1;
+                color: #fff;
+                &.em4{
+                  font-size: 22px;
+                }
+                &.em5{
+                  font-size: 24px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .start-end-btn{
+        position: absolute; //知道奖项之后要删
+        bottom: 10px;
+        left: 0;
+        box-sizing: border-box;
+        padding: 0 60px;
+        width: 100%;
+        height: 42px;
+        display: flex;
+        justify-content: space-between;
+        .btn{
+          width: 138px;
+          height: 42px;
+          background: #ffc501;
+          background: url(../images/btn-bg42.jpg);
+          text-align: center;
+          line-height: 42px;
+          font-size: 16px;
+          font-weight: 600;
+          letter-spacing: 0.1em;
+          border-radius: 5px;
+          color: #f2005b;
+          cursor: pointer;
+        }
+
+      }
+    }
+  }
+}
